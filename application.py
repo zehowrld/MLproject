@@ -9,12 +9,12 @@ application = Flask(__name__)
 app=application
 # Route for a home page
 @app.route('/')
-@cross_origin()
+
 def index():
     return render_template('index.html')
 
 @app.route('/predictdata', methods=['GET', 'POST'])
-@cross_origin()
+
 def predict_datapoint():
     if request.method == 'GET':
         return render_template('index.html')
