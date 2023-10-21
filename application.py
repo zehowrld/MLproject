@@ -10,7 +10,7 @@ app=application
 # Route for a home page
 @app.route('/')
 
-def index():
+def home_page():
     return render_template('index.html')
 
 @app.route('/predictdata', methods=['GET', 'POST'])
