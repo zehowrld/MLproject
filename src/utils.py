@@ -37,7 +37,7 @@ def evaluate_models(X_train, y_train, X_test, y_test, models, param):
         param (dict): Dictionary of model parameters.
 
     Returns:
-        dict: A dictionary with model names as keys and R-squared scores as values.
+        dict: A dictionary with model names as keys and R-squared score as values.
     """
     try:
         report = {}
